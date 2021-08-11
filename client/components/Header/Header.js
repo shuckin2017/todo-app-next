@@ -7,15 +7,15 @@ export const Header = () => {
     const [open, setOpen] = React.useState(false);
     const closeModal = () => setOpen(false);
     return (
-        <header className="bg-blue-600 w-full shadow h-16">
-            <div className="text-white flex justify-between items-center h-full  container mx-auto">
-                <div className="flex ilems-center justify-center">
+        <header className="bg-blue w-full shadow h-16">
+            <div className=" flex justify-between items-center h-full  container mx-auto">
+                <div className="flex ilems-center justify-center text-white">
                     <UilSun className="h-10 w-10 mr-3" />
                     <h1 className="text-3xl font-medium">Days</h1>
                 </div>
                 {!auth && (
                     <div
-                        className="border-2 rounded px-3 py-1 border-white flex items-center text-xl font-medium hover:bg-white hover:text-blue-600 transition-all cursor-pointer active:bg-gray-200"
+                        className="border-2 rounded px-3 py-1 border-white flex items-center text-xl font-medium  transition-all cursor-pointer text-white"
                         onClick={() => setOpen((i) => !i)}
                     >
                         Login
@@ -28,10 +28,12 @@ export const Header = () => {
                 closeOnDocumentClick
                 keepTooltipInside=".services__modal-close"
             >
-                <div className="fixed top-0 left-0 right-0 bottom-0 modal__popup">
+                <div className="fixed top-0 left-0 right-0 bottom-0 modal__popup text-primary bg-white">
                     <div className="reletive bg-white px-6 py-5 h-2/5 w-1/5 rounded-xl">
                         <div className="flex justify-between items-center">
-                            <h4 className="text-3xl font-medium">Авторизация</h4>
+                            <h4 className="text-3xl font-medium">
+                                Авторизация
+                            </h4>
                             <UilTimes
                                 className="h-10 w-10 text-blue-600 hover:text-blue-700"
                                 onClick={closeModal}
@@ -69,11 +71,11 @@ export const Header = () => {
                                 </div>
                                 <div className="flex items-center justify-between">
                                     <button
-                                        className="bg-blue-600 hover:bg-blue-dark text-white font-bold py-2 px-4 rounded"
+                                        className="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded"
                                         type="button"
                                         onClick={closeModal}
                                     >
-                                       Войти
+                                        Войти
                                     </button>
                                 </div>
                             </div>

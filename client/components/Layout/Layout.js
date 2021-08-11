@@ -9,7 +9,7 @@ export const Layout = ({ children }) => {
             </Head>
             <Header />
 
-            <main className="flex flex-col items-center justify-center w-full flex-1 text-center container mx-auto">
+            <main className="flex flex-row w-full flex-1 container mx-auto py-10 justify-between content">
                 {children}
             </main>
 
