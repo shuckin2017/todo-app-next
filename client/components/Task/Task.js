@@ -19,7 +19,7 @@ export const Task = () => {
       <div>
         <div>
           <div className="text-3xl text-primary font-medium mb-5">
-            Quick Tasks
+            Задачи
           </div>
           <div className="text-sm text-gray-dark">fasted quick tasks</div>
         </div>

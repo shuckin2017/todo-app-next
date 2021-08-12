@@ -8,11 +8,9 @@ export const Layout = ({ children }) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />
-
             <main className="flex flex-row w-full flex-1 container mx-auto py-10 justify-between content">
                 {children}
             </main>
-
             <footer className="flex items-center justify-center w-full h-24 border-t  container mx-auto">
                 <a
                     className="flex items-center justify-center"
